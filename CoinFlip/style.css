@@ -1,0 +1,112 @@
+/* Reset dasar biar konsisten */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 30px;
+  width: 400px;
+  max-width: 90vw;
+}
+
+h3, h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+#userArea, #gameArea {
+  margin-bottom: 25px;
+}
+
+input[type="text"], input[type="number"], select {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7f5af0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #624de3;
+}
+
+p#hasil {
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  min-height: 40px;
+}
+
+.history, #leaderboardArea {
+  background: rgba(0,0,0,0.15);
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-weight: 500;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+#leaderboardArea {
+  margin-top: 20px;
+}
+
+strong {
+  color: #ffd700;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+}

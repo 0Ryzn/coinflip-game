@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coinflip Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Coinflip Game</h2>
+    
+    <div id="userArea">
+      <input type="text" id="username" placeholder="Masukkan nama kamu sayang~">
+      <button onclick="startGame()">Mulai</button>
+    </div>
+
+    <div id="gameArea" style="display:none">
+      <p>Halo, <span id="playerName"></span>! Saldo kamu: <strong><span id="saldo"></span> coin</strong></p>
+      <select id="pilihan">
+        <option value="Head">Head</option>
+        <option value="Tail">Tail</option>
+      </select>
+      <input type="number" id="taruhan" placeholder="Jumlah taruhan">
+      <button onclick="flipCoin()">Flip Sekarang </button>
+      <p id="hasil"></p>
+      <div class="history">
+        <h4>Histori:</h4>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+  </div>
+  <div id="leaderboardArea">
+  <h3>Leaderboard Pemenang Terbanyak</h3>
+  <ul id="leaderboardList"></ul>
+</div>
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
