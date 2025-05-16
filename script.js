@@ -15,7 +15,7 @@ let saldo = 100;
 function startGame() {
   const input = document.getElementById('username');
   if (!input.value.trim()) {
-    alert('Masukkan nama kamu sayang!');
+    alert('Masukkan nama kamu!');
     return;
   }
   username = input.value.trim();
